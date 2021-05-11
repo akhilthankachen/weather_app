@@ -10,10 +10,15 @@
   },
   "dependencies": {
     "autoprefixer": "^9",
+    "axios": "^0.21.1",
     "core-js": "^3.6.5",
+    "fusioncharts": "^3.17.0",
+    "moment": "^2.29.1",
+    "moment-timezone": "^0.5.33",
     "postcss": "^7",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "vue": "^3.0.0",
+    "vue-fusioncharts": "^3.1.0",
     "vue-router": "^4.0.0-0",
     "vuex": "^4.0.0-0"
   },
