@@ -1,16 +1,24 @@
 <template>
   <div>
-    <h1 class="text-7xl text-yellow-800 text-center my-8">Hello</h1>
+    <Searchbar/>
     <TempClimateInfo/>
+    <TempLowest/>
+    <temp-highest/>
   </div>
 </template>
 
 <script>
 import TempClimateInfo from './components/TempClimateInfo'
+import Searchbar from './components/Searchbar'
+import TempLowest from './components/TempLowest.vue'
+import TempHighest from './components/TempHighest'
 
 export default {
   components: {
-    TempClimateInfo
+    TempClimateInfo,
+    Searchbar,
+    TempLowest,
+    TempHighest
   }
 }
 </script>

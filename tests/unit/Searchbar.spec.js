@@ -1,6 +1,6 @@
 import { shallowMount, mount } from "@vue/test-utils"
 import Vuex from 'vuex'
-import TempClimateInfo from "@/components/TempClimateInfo"
+import Searchbar from "@/components/Searchbar"
 
 const mockStore = {
     state: {location: 'hello'},
@@ -8,7 +8,7 @@ const mockStore = {
     commit: jest.fn(),
     getters: {getSearchText: "hello"}
 }
-const wrapper = mount(TempClimateInfo, {
+const wrapper = mount(Searchbar, {
     global: {
         mocks: {
             $store: mockStore
@@ -17,7 +17,7 @@ const wrapper = mount(TempClimateInfo, {
 
 })
 
-describe("TempClimateInfo", () => {
+describe("Searchbar", () => {
 
     it("Check if an input box exists with id search_input", ()=>{
         // check weather an input box exists with id search
